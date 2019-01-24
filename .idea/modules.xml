@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/api-doc/api-doc.iml" filepath="$PROJECT_DIR$/api-doc/api-doc.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootproject.iml" filepath="$PROJECT_DIR$/springbootproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xds-eureka-service/xds-eureka-service.iml" filepath="$PROJECT_DIR$/xds-eureka-service/xds-eureka-service.iml" />
     </modules>
   </component>
 </project>

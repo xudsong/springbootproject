@@ -17,6 +17,7 @@
 
     <modules>
         <module>api-doc</module>
+        <module>xds-eureka-service</module>
     </modules>
 
     <dependencyManagement>

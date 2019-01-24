@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-doc" />
+        <module name="xds-eureka-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="api-doc" target="1.8" />
       <module name="myspringbootdemo" target="1.8" />
       <module name="springbootproject" target="1.8" />
+      <module name="xds-eureka-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
