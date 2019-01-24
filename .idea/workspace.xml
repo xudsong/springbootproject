@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02f93a8-4f0b-4bd2-80df-755ab472028d" name="默认" comment="add">
+    <list default="true" id="a02f93a8-4f0b-4bd2-80df-755ab472028d" name="默认" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/api-doc/README.md" afterPath="$PROJECT_DIR$/api-doc/README.md" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/myspringbootdemo.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/spring-boot-demo.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/SpringbootdemoApplication.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/config/MysqlGenerator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/config/QuartzConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/config/RedisConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/config/RestTemplateConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/config/SwaggerConfiguration.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/controller/DeptController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/controller/EmployeeController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/controller/HelloController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/controller/UserDbController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/entity/Dept.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/entity/Employee.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/entity/UserDb.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/mapper/DeptMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/mapper/DeptMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/mapper/EmployeeMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/mapper/EmployeeMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/mapper/UserDbMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/mapper/UserDbMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/mapper/UserMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/model/User.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/quartz/MyCronJob.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/quartz/MyJob.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/service/DeptService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/service/EmployeeService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/service/UserDbService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/service/impl/DeptServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/service/impl/EmployeeServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/service/impl/UserDbServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/util/CommonUtils.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/util/ObjectFiledCheckUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/java/springbootdemo/util/UUIDUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/resources/resources/application-dev.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/resources/resources/application-prod.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/resources/resources/application-test.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/resources/resources/application.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/main/resources/resources/mapper/UserMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/test/java/springbootdemo/MainTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/test/java/springbootdemo/SampleTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/test/java/springbootdemo/SpringbootdemoApplicationTests.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/test/java/springbootdemo/singleton/SingleFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/test/java/springbootdemo/singleton/Singleton.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/test/java/springbootdemo/templatePattern/AbstractClass.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/src/test/java/springbootdemo/templatePattern/ConcreteClass1.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/resources/application-dev.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/resources/application-prod.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/resources/application-test.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/resources/application.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/resources/mapper/UserMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/SpringbootdemoApplication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/config/MysqlGenerator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/config/QuartzConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/config/RedisConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/config/RestTemplateConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/config/SwaggerConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/controller/DeptController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/controller/EmployeeController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/controller/HelloController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/controller/UserDbController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/entity/Dept.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/entity/Employee.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/entity/UserDb.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/mapper/DeptMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/mapper/EmployeeMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/mapper/UserDbMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/mapper/UserMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/model/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/quartz/MyCronJob.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/quartz/MyJob.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/service/DeptService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/service/EmployeeService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/service/UserDbService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/service/impl/DeptServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/service/impl/EmployeeServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/service/impl/UserDbServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/swaggerDoc/controller/WordController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/swaggerDoc/dto/Request.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/swaggerDoc/dto/Response.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/swaggerDoc/dto/Table.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/swaggerDoc/service/TableService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/swaggerDoc/service/impl/DocCreateService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/swaggerDoc/service/impl/TableServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/util/CommonUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/util/ObjectFiledCheckUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/classes/springbootdemo/util/UUIDUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/test-classes/springbootdemo/MainTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/test-classes/springbootdemo/SampleTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/test-classes/springbootdemo/SpringbootdemoApplicationTests.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/test-classes/springbootdemo/singleton/SingleFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/test-classes/springbootdemo/singleton/Singleton.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/test-classes/springbootdemo/templatePattern/AbstractClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/myspringbootdemo/target/test-classes/springbootdemo/templatePattern/ConcreteClass1.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,96 +112,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApiDocApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-doc/src/main/java/com/springboot/doc/ApiDocApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-doc/src/main/java/com/springboot/doc/controller/WordController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1607#1615#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api-doc/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-doc/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocCreateService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-doc/src/main/java/com/springboot/doc/service/impl/DocCreateService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4350">
-              <caret line="145" column="17" lean-forward="false" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-doc/src/main/java/com/springboot/doc/dto/Model.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-doc/src/main/java/com/springboot/doc/service/impl/TableServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3383">
-              <caret line="92" column="11" lean-forward="true" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-doc/src/main/java/com/springboot/doc/service/TableService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -218,56 +223,6 @@
               <item name="springbootproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootproject" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="springbootproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootproject" type="462c0819:PsiDirectoryNode" />
-              <item name="api-doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootproject" type="462c0819:PsiDirectoryNode" />
-              <item name="api-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootproject" type="462c0819:PsiDirectoryNode" />
-              <item name="api-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootproject" type="462c0819:PsiDirectoryNode" />
-              <item name="api-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootproject" type="462c0819:PsiDirectoryNode" />
-              <item name="api-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootproject" type="462c0819:PsiDirectoryNode" />
-              <item name="api-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootproject" type="462c0819:PsiDirectoryNode" />
-              <item name="api-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -280,7 +235,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/springbootdemo" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -317,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiDocApplication (1)">
+  <component name="RunManager" selected="Spring Boot.SpringbootdemoApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -448,7 +403,7 @@
       <updated>1548160262718</updated>
       <workItem from="1548160267145" duration="1978000" />
       <workItem from="1548205017891" duration="1761000" />
-      <workItem from="1548208516570" duration="12689000" />
+      <workItem from="1548208516570" duration="13135000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1548211129553</created>
@@ -478,15 +433,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548311228520</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add">
+      <created>1548311591387</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1548311591387</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16428000" />
+    <option name="totallyTimeSpent" value="16874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -497,18 +458,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27856365" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27856365" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.171926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="设计器" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -597,9 +558,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -607,9 +566,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -617,9 +574,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -627,9 +582,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -637,9 +590,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -647,9 +598,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -657,9 +606,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -667,9 +614,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -677,9 +622,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -687,9 +630,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="17" column="58" lean-forward="false" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -697,9 +638,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -747,9 +686,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -765,9 +702,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -775,29 +710,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="44" column="46" lean-forward="false" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-          <folding>
-            <element signature="e#931#932#0" expanded="false" />
-            <element signature="e#960#961#0" expanded="false" />
-            <element signature="e#985#986#0" expanded="false" />
-            <element signature="e#1021#1022#0" expanded="false" />
-            <element signature="e#1049#1050#0" expanded="false" />
-            <element signature="e#1084#1085#0" expanded="false" />
-            <element signature="e#1115#1116#0" expanded="false" />
-            <element signature="e#1163#1164#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1233#1234#0" expanded="false" />
-            <element signature="e#1259#1260#0" expanded="false" />
-            <element signature="e#1297#1298#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1360#1361#0" expanded="false" />
-            <element signature="e#1391#1392#0" expanded="false" />
-            <element signature="e#1437#1438#0" expanded="false" />
-            <element signature="e#1477#1478#0" expanded="false" />
-            <element signature="e#1511#1512#0" expanded="false" />
-            <element signature="e#1541#1542#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="false" />
-            <element signature="e#1625#1626#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -813,9 +726,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <marker date="1546052147608" expanded="true" signature="471:507" ph="select * fro... user_db" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -908,9 +819,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +900,7 @@
         <state relative-caret-position="4350">
           <caret line="145" column="17" lean-forward="false" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1001,17 +910,6 @@
         <state relative-caret-position="-3383">
           <caret line="92" column="11" lean-forward="true" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-doc/src/main/java/com/springboot/doc/controller/WordController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1607#1615#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,6 +929,17 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-doc/src/main/java/com/springboot/doc/controller/WordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1607#1615#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
