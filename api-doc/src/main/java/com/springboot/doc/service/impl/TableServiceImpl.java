@@ -1,8 +1,6 @@
 package com.springboot.doc.service.impl;
 
-import com.springboot.doc.dto.Request;
-import com.springboot.doc.dto.Response;
-import com.springboot.doc.dto.Table;
+import com.springboot.doc.dto.*;
 import com.springboot.doc.service.TableService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,13 +22,81 @@ public class TableServiceImpl implements TableService {
     private String swaggerUrl;
 
     @Override
-    public List<Table> tableList() {
+    public Map<String,Object> tableList() {
         Map<String, Object> map = restTemplate.getForObject(swaggerUrl, Map.class);
-        List<Table> list = new LinkedList();
+        List<Table> tableList = new LinkedList();
+        List<Model> modelList = new LinkedList<>();
         //得到host，并添加上http 或 https
         String host = StringUtils.substringBefore(swaggerUrl, ":") + String.valueOf(map.get("host"));
         //解析paths
         LinkedHashMap<String, LinkedHashMap> paths = (LinkedHashMap) map.get("paths");
+        tableList = createTable(paths,tableList,host);
+        //解析实体对象
+        LinkedHashMap<String,LinkedHashMap> objects = (LinkedHashMap) map.get("definitions");
+        modelList = createModel(objects,modelList);
+
+        Map<String,Object> objectMap = new HashMap<>();
+        objectMap.put("table",tableList);
+        objectMap.put("model",modelList);
+        return objectMap;
+
+    }
+
+    /**
+     * 提取实体对象
+     * @param objects
+     * @param modelList
+     * @return
+     */
+    private List<Model> createModel(LinkedHashMap<String,LinkedHashMap> objects,List<Model> modelList){
+        if (objects !=null){
+            Iterator<Map.Entry<String, LinkedHashMap>> ob = objects.entrySet().iterator();
+            while (ob.hasNext()) {
+                Model model = new Model();
+                List<Field> fieldList = new LinkedList<>();
+                Map.Entry<String, LinkedHashMap> obMap = ob.next();
+                LinkedHashMap value = obMap.getValue();
+                //填充model
+                model.setType(String.valueOf(value.get("type")));
+                model.setTitle(String.valueOf(value.get("title")));
+
+                List<String> required = (List)value.get("required");
+                //获取field
+                LinkedHashMap properties = (LinkedHashMap)value.get("properties");
+                Iterator<Map.Entry<String, LinkedHashMap>> propertiesMap = properties.entrySet().iterator();
+                while (propertiesMap.hasNext()){
+                    Field field = new Field();
+                    Map.Entry<String, LinkedHashMap> fieldMap = propertiesMap.next();
+                    LinkedHashMap fieldMapValue = fieldMap.getValue();
+                    //填充field
+                    field.setName(fieldMap.getKey());
+                    if (null!=required&&required.contains(fieldMap.getKey())){
+                        field.setRequired("Y");
+                    }else {
+                        field.setRequired("N");
+                    }
+                    field.setType(String.valueOf(fieldMapValue.get("type")));
+                    field.setFormat(String.valueOf(fieldMapValue.get("format")));
+                    field.setDescription(String.valueOf(fieldMapValue.get("description")));
+                    field.setExample(String.valueOf(fieldMapValue.get("example")));
+                    field.setEnumstr(String.valueOf(fieldMapValue.get("enum")));
+                    fieldList.add(field);
+                }
+                model.setProperties(fieldList);
+                modelList.add(model);
+            }
+        }
+        return modelList;
+    }
+
+    /**
+     * 提取接口
+     * @param paths
+     * @param list
+     * @param host
+     * @return
+     */
+    private List<Table> createTable(LinkedHashMap<String,LinkedHashMap> paths,List<Table> list,String host){
         if (paths != null) {
             Iterator<Map.Entry<String, LinkedHashMap>> it = paths.entrySet().iterator();
             while (it.hasNext()) {

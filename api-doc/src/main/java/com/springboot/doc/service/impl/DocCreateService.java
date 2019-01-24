@@ -1,8 +1,9 @@
 package com.springboot.doc.service.impl;
 
-import com.springboot.doc.dto.Request;
-import com.springboot.doc.dto.Response;
-import com.springboot.doc.dto.Table;
+import com.alibaba.fastjson.JSONObject;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.springboot.doc.dto.*;
 import org.apache.poi.xwpf.usermodel.*;
 import org.apache.xmlbeans.XmlException;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyles;
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.*;
 import java.math.BigInteger;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class DocCreateService {
@@ -45,7 +46,7 @@ public class DocCreateService {
         }
     }
 
-    public void creatDoc(List<Table> list) throws Exception{
+    public void creatDoc(Map<String,List<Table>> listMap,List<Model> modelList) throws Exception{
         XWPFDocument document = new XWPFDocument();
         File file = new File(path);
         FileOutputStream out = new FileOutputStream(file);
@@ -59,58 +60,91 @@ public class DocCreateService {
         /**
          * 标题
          */
-        createParagraph(document,ParagraphAlignment.CENTER,"1",20,"000000","API文档");
+        createParagraph(document,ParagraphAlignment.CENTER,"0",20,"000000","API文档");
 
-        list.remove(0);
-        for(Table table : list) {
+        Iterator<Map.Entry<String,List<Table>>> ob = listMap.entrySet().iterator();
+        while (ob.hasNext()) {
+            Map.Entry<String,List<Table>> tableMap = ob.next();
+            createParagraph(document, ParagraphAlignment.LEFT, "1", 16, "696969", tableMap.getKey());
+            List<Table> list = tableMap.getValue();
+            for (Table table : list) {
 
-            createParagraph(document,ParagraphAlignment.LEFT,"2",16,"696969",table.getTitle());
+                createParagraph(document, ParagraphAlignment.LEFT, "2", 14, "696969", table.getTag() + "(" + table.getDescription() + ")");
 
-            createParagraph(document,ParagraphAlignment.LEFT,"3",14,"696969",table.getTag()+"("+ table.getDescription()+")");
+                //创建表格
+                XWPFTable infoTable = createTable(document);
+                //去表格边框
+                //infoTable.getCTTbl().getTblPr().unsetTblBorders();
+                //表格表头
+                createTableRowOne(infoTable, "请求方式", "请求URL", "返回值类型");
+                //表格body
+                createTableRowTwo(infoTable, table.getRequestType(), table.getUrl(), table.getResponseForm());
 
-            //创建表格
-            XWPFTable infoTable = createTable(document);
-            //去表格边框
-            //infoTable.getCTTbl().getTblPr().unsetTblBorders();
-            //表格表头
-            createTableRowOne(infoTable,"请求方式","请求URL","返回值类型");
-            //表格body
-            createTableRowTwo(infoTable,table.getRequestType(),table.getUrl(),table.getResponseForm());
-
-            //添加标题
-            createParagraph(document,ParagraphAlignment.LEFT,"3",12,"000000","请求参数");
-            //创建请求参数表格
-            XWPFTable infoTable1 = createTable(document);
-            //表格表头
-            createTableRowOne(infoTable1,"参数名","数据类型","参数类型","是否必填","备注");
-            for(Request request:table.getRequestList()){
-                String require = "N";
-                if(request.getRequire()==true){
-                    require = "Y";
+                //添加标题
+                createParagraph(document, ParagraphAlignment.LEFT, "3", 12, "000000", "请求参数");
+                //创建请求参数表格
+                XWPFTable infoTable1 = createTable(document);
+                //表格表头
+                createTableRowOne(infoTable1, "参数名", "数据类型", "参数类型", "是否必填", "备注");
+                for (Request request : table.getRequestList()) {
+                    String require = "N";
+                    if (request.getRequire() == true) {
+                        require = "Y";
+                    }
+                    boolean flag = true;
+                    for (Model model : modelList) {
+                        if (model.getTitle().equalsIgnoreCase(request.getName())) {
+                            List<Field> fieldList = model.getProperties();
+                            for (Field field : fieldList) {
+                                createTableRowTwo(infoTable1, field.getName(), field.getType(), field.getFormat(), field.getRequired(), field.getDescription());
+                            }
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if (flag) {
+                        createTableRowTwo(infoTable1, request.getName(), request.getType(), request.getParamType(), require, request.getRemark());
+                    }
                 }
-                createTableRowTwo(infoTable1,request.getName(),request.getType(),request.getParamType(),require,request.getRemark());
+
+                //添加标题
+                createParagraph(document, ParagraphAlignment.LEFT, "3", 12, "000000", "响应参数");
+                //创建相应参数表格
+                XWPFTable infoTable2 = createTable(document);
+                //表格表头
+                createTableRowOne(infoTable2, "返回参数", "参数名", "备注");
+                //表格body
+                for (Response response : table.getResponseList()) {
+                    createTableRowTwo(infoTable2, response.getDescription(), response.getName(), response.getRemark());
+                }
+                //添加标题
+                createParagraph(document, ParagraphAlignment.LEFT, "3", 12, "000000", "示例");
+                //创建相应参数表格
+                XWPFTable infoTable3 = createTable(document);
+
+                Gson gson = new Gson();
+                Map<String,Object> map = gson.fromJson(table.getRequestParam(),Map.class);
+
+                Set<String> stringSet = map.keySet();
+                for (String str : stringSet){
+                    boolean flag = true;
+                    for (Model model : modelList) {
+                        if (model.getTitle().equalsIgnoreCase(str)) {
+                            List<Field> fieldList = model.getProperties();
+                            Map<String,String> paraMap = new HashMap<>();
+                            for (Field field : fieldList) {
+                                paraMap.put(field.getName(),field.getExample());
+                            }
+                            createTableRowOne(infoTable3, "请求参数", JSONObject.toJSONString(paraMap));
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if (flag) {
+                        createTableRowOne(infoTable3, "请求参数", table.getRequestParam());
+                    }
+                }
             }
-
-            //添加标题
-            createParagraph(document,ParagraphAlignment.LEFT,"3",12,"000000","响应参数");
-            //创建相应参数表格
-            XWPFTable infoTable2 = createTable(document);
-            //表格表头
-            createTableRowOne(infoTable2,"返回参数","参数名","备注");
-            //表格body
-            for(Response response:table.getResponseList()){
-                createTableRowTwo(infoTable2,response.getDescription(),response.getName(),response.getRemark());
-            }
-            //添加标题
-            createParagraph(document,ParagraphAlignment.LEFT,"3",12,"000000","示例");
-            //创建相应参数表格
-            XWPFTable infoTable3 = createTable(document);
-            createTableRowOne(infoTable3,"请求参数",table.getRequestParam());
-            createTableRowTwo(infoTable3,"返回值",table.getResponseParam());
-
-            //换行
-            nextLine(document);
-
         }
         document.write(out);
         out.close();
