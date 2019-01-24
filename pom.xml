@@ -16,7 +16,7 @@
     </properties>
 
     <modules>
-        <module>myspringbootdemo</module>
+        <module>api-doc</module>
     </modules>
 
     <dependencyManagement>
