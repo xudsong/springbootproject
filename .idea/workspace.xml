@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02f93a8-4f0b-4bd2-80df-755ab472028d" name="默认" comment="微服务">
+    <list default="true" id="a02f93a8-4f0b-4bd2-80df-755ab472028d" name="默认" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-producer/pom.xml" afterPath="$PROJECT_DIR$/spring-cloud-producer/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/xds-eureka-service/pom.xml" afterPath="$PROJECT_DIR$/xds-eureka-service/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,6 +11,16 @@
     <ignored path="$PROJECT_DIR$/api-doc/target/" />
     <ignored path="$PROJECT_DIR$/xds-eureka-service/target/" />
     <ignored path="$PROJECT_DIR$/spring-cloud-producer/target/" />
+    <ignored path=".idea/libraries/Maven__io_github_openfeign_feign_core_9_5_1.xml" />
+    <ignored path=".idea/libraries/Maven__io_github_openfeign_feign_hystrix_9_5_1.xml" />
+    <ignored path=".idea/libraries/Maven__io_github_openfeign_feign_java8_9_5_1.xml" />
+    <ignored path=".idea/libraries/Maven__io_github_openfeign_feign_slf4j_9_5_1.xml" />
+    <ignored path=".idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" />
+    <ignored path=".idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_0_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_feign_1_4_6_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_0_0_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_0_0_RELEASE.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +63,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-cloud-producer/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
+            <state relative-caret-position="264">
               <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
               <folding />
             </state>
@@ -460,7 +467,7 @@
       <workItem from="1548312271484" duration="2223000" />
       <workItem from="1548315787157" duration="5775000" />
       <workItem from="1548379482218" duration="69000" />
-      <workItem from="1548379586569" duration="5639000" />
+      <workItem from="1548379586569" duration="5691000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1548211129553</created>
@@ -539,15 +546,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548379745826</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="微服务">
+      <created>1548408361955</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1548408361955</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30805000" />
+    <option name="totallyTimeSpent" value="30857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -566,7 +579,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3079434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23394994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23394994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -829,7 +842,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-cloud-producer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
+        <state relative-caret-position="264">
           <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
           <folding />
         </state>
