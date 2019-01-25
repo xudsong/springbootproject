@@ -6,12 +6,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/api-doc/pom.xml" />
         <option value="$PROJECT_DIR$/xds-eureka-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-producer/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="E:/springbootdemo/pom.xml" />
         <option value="$PROJECT_DIR$/myspringbootdemo/pom.xml" />
+        <option value="E:/springbootdemo/pom.xml" />
       </set>
     </option>
   </component>
