@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
     @PostMapping(value = "/hello")
-    public String sayHello(@RequestParam String name){
+    public String sayHello(@RequestParam(value = "name") String name){
         return "hello "+name+"，this is first messge";
     }
 }

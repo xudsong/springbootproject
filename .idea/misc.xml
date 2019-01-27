@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/api-doc/pom.xml" />
         <option value="$PROJECT_DIR$/xds-eureka-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-consumer/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
