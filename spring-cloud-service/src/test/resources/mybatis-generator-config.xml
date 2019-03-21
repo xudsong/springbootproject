@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+
+    <!-- !!!! Driver Class Path !!!! -->
+    <properties resource="generator.properties"/>
+
+    <context id="spring-cloud-service" targetRuntime="MyBatis3">
+
+        <!--<commentGenerator>-->
+            <!--<property name="suppressAllComments" value="false"/> 是否取消注释-->
+            <!--<property name="suppressDate" value="true"/> 是否生成注释带时间戳-->
+        <!--</commentGenerator>-->
+
+        <!--自定义方法-->
+        <plugin type="com.xudasong.service.springcloudservice.mybatis.plugins.LombokPlugin">
+            <property name="targetProject" value="src/main/java"/>
+            <property name="targetPackage" value="${daoPackage}"/>
+        </plugin>
+
+        <plugin type="com.xudasong.service.springcloudservice.mybatis.plugins.OverIsMegerablePlugin"/>
+
+        <commentGenerator type="com.xudasong.service.springcloudservice.mybatis.plugins.CustomizeCommentGenerator"/>
+
+        <!-- jdbc连接 !!!! Database Configurations !!!! -->
+        <jdbcConnection driverClass="${jdbc_driver}" connectionURL="${jdbc_url}" userId="${jdbc_user}" password="${jdbc_pwd}"/>
+
+        <!--类型转换-->
+        <javaTypeResolver>
+            <!--是否使用bigDecimal，false可自动转化以下类型（Long, Integer, Short, etc）-->
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!-- 生成实体类地址 !!!! Model Configurations !!!! -->
+        <javaModelGenerator targetPackage="${modelPackage}" targetProject="${project}">
+            <!--是否在当前路径下新加一层schema, eg: false路径com.oop.eksp.user.model, true: com.oop.eksp.user.model.[schemaNmae]-->
+            <property name="enableSubPackages" value="false"/>
+            <!-- 是否针对string类型的字段在set的时候进行trim调用 -->
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- mapxml文件!!!! Mapper XML Configurations !!!! -->
+        <sqlMapGenerator targetPackage="${sqlMapPackage}" targetProject="${resources}">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+
+        <!-- 生成mapxml对应的client，也就是接口dao !!!! Mapper Interface Configurations !!!! -->
+        <javaClientGenerator targetPackage="${daoPackage}" targetProject="${project}" type="XMLMAPPER">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+
+        <!-- 配置表信息 !!!! Table Configurations !!!! -->
+
+        <table schema="public" tableName="dept" domainObjectName="Dept"
+               enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+
+        <table schema="public" tableName="employee" domainObjectName="Employee"
+               enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+
+        <table schema="public" tableName="user_db" domainObjectName="User"
+               enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false"/>
+
+    </context>
+</generatorConfiguration>
