@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.*;
 
+import static java.util.Comparator.comparing;
+
 @RestController
 public class WordController {
     @Autowired
@@ -26,6 +28,7 @@ public class WordController {
             List<Table> tableList = (List)map.get("table");
             List<Model> modelList = (List)map.get("model");
             //排序
+            //tableList.sort(comparing(Table::getTitle));   //java 8 新特性 实现排序
             Collections.sort(tableList, new Comparator<Table>() {
                 @Override
                 public int compare(Table o1, Table o2) {

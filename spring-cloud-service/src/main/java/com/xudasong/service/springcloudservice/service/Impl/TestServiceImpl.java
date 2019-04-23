@@ -5,6 +5,8 @@ import com.xudasong.service.springcloudservice.service.ITestService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 
 import static com.xudasong.service.springcloudservice.enums.ErrorCode.LESS_PARAM_ERROR;
 
@@ -20,4 +22,5 @@ public class TestServiceImpl implements ITestService{
         }
         return name;
     }
+
 }
