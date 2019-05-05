@@ -36,10 +36,13 @@ public class TestController extends BaseController{
     private UserMapper userMapper;
 
     @ApiOperation(value = "测试")
-    @PostMapping(value = "/api/auth/test")
+    @PostMapping(value = "/api/release/test")
     public CommonResponse<String> test(@Valid @RequestParam @NotBlank(message = "name不能为空") String name){
-        TokenInfoDto tokenInfoDto = getTokenInfo();
+        //TokenInfoDto tokenInfoDto = getTokenInfo();
         String result = testService.test(name);
+        for (int i=0;i<20;i++){
+            System.out.println(i);
+        }
         return CommonResponse.success(result);
     }
 
@@ -48,6 +51,7 @@ public class TestController extends BaseController{
     public void exportUsers(HttpServletResponse response)throws Exception{
         List<User> userList = userMapper.selectAllUsers();
         if (CollectionUtils.isEmpty(userList)){
+            return;
 //            return CommonResponse.fail(2001,"无数据可导出");
         }else {
             String template = "users.xlsx";
