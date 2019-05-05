@@ -8,6 +8,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 /**
  * 异步调用线程池配置
+ * 在需要异步调用的方法上加入注解@Async即可实现异步调用
  */
 @Configuration
 @EnableAsync
