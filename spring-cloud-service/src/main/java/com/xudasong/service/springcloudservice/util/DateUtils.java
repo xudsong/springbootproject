@@ -10,7 +10,7 @@ import java.time.temporal.TemporalAdjusters;
  * 时间工具类
  * Java8的DateTimeFormatter是线程安全的，而SimpleDateFormat并不是线程安全
  */
-public class DateUtil {
+public class DateUtils {
 
     /**
      * 获取当前时间
@@ -25,7 +25,7 @@ public class DateUtil {
 
     public static void main(String[] args)throws Exception{
         String pattern = "yyyy-MM-dd HH:mm:ss";
-        System.out.println(DateUtil.getNowTime(pattern));
+        System.out.println(DateUtils.getNowTime(pattern));
 
         // 获取今天的日期
         LocalDate today = LocalDate.now();
