@@ -7,6 +7,7 @@ import com.xudasong.service.springcloudservice.enums.StatusCode;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
 import lombok.*;
+import org.apache.log4j.spi.ErrorCode;
 
 import java.io.Serializable;
 

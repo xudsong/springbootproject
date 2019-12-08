@@ -20,6 +20,7 @@
         <module>api-doc</module>
         <module>xds-eureka-service</module>
         <module>spring-cloud-producer</module>
+        <module>spring-cloud-service</module>
     </modules>
 
     <dependencyManagement>
