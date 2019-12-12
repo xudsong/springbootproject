@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02f93a8-4f0b-4bd2-80df-755ab472028d" name="默认" comment="添加图片验证码接口">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__bouncycastle_bcmail_jdk14_138.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__bouncycastle_bcprov_jdk14_138.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_2_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcmail_jdk14_1_64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk14_1_64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk14_1_64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bctsp_jdk14_1_38.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xhtmlrenderer_flying_saucer_core_9_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xhtmlrenderer_flying_saucer_pdf_9_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/ITextRendererObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/controller/HtmlToPdfController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/model/OverseaVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/Impl/PdfService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/util/CreatePdfUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/util/FreeMarkerUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/util/FreemarkerConfigurationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/util/ResourceLoaderUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/util/Tools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/pdffont/simsun.ttc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/static/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/templates/overseaAssistance.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/tmp/1576048987061.pdf" afterDir="false" />
+    <list default="true" id="a02f93a8-4f0b-4bd2-80df-755ab472028d" name="默认" comment="添加html转pdf接口">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_48.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_quartz_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/db/quartz.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/DateUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/QuartzUiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/SchedulerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/SpringbootJobFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/controller/JobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/job/BaseJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/job/HelloJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/job/NewJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/mapper/JobAndTriggerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/model/JobAndTrigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/req/JobInfoReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/IJobAndTriggerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/Impl/IJobAndTriggerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/mapper/JobMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/quartz.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/static/JobManager.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,19 +48,12 @@
       <list>
         <option value="Enum" />
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="mybatis-config" />
         <option value="mybatis-generator-config" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>CONSOLE</find>
-      <find>logPattern</find>
-      <find>getRemar</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -284,7 +271,7 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@49631bc4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a9cc19be" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6053f5ee" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -331,7 +318,7 @@
       <workItem from="1566873716027" duration="706000" />
       <workItem from="1566875660006" duration="8820000" />
       <workItem from="1575782144440" duration="2339000" />
-      <workItem from="1576029152783" duration="12752000" />
+      <workItem from="1576029152783" duration="27101000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1548211129553</created>
@@ -529,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576033482063</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="添加html转pdf接口">
+      <created>1576049166821</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1576049166821</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -594,7 +588,8 @@
     <MESSAGE value="加入mongodb" />
     <MESSAGE value="线程池" />
     <MESSAGE value="添加图片验证码接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加图片验证码接口" />
+    <MESSAGE value="添加html转pdf接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加html转pdf接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
