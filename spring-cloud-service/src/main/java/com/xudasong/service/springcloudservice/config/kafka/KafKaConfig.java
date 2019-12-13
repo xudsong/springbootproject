@@ -2,6 +2,7 @@ package com.xudasong.service.springcloudservice.config.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -40,12 +41,13 @@ public class KafKaConfig {
         props.put(ProducerConfig.BATCH_SIZE_CONFIG,  4096);
         // 生产者会在ProducerBatch被填满或者等待超过LINGER_MS_CONFIG时发送
         props.put(ProducerConfig.LINGER_MS_CONFIG, 1);
-        // key 和 value 的序列化
-        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
-        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
-                "org.apache.kafka.common.serialization.StringSerializer");
+        // key 和 value 的序列化 "org.apache.kafka.common.serialization.StringSerializer"
+        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         // 客户端id
         props.put(ProducerConfig.CLIENT_ID_CONFIG, "producer.client.id.topinfo");
+        //判别请求是否为完整的条件（就是是判断是不是成功发送了）。我们指定了“all”将会阻塞消息，这种设置性能最低，但是是最可靠的。
+        props.put(ProducerConfig.ACKS_CONFIG,"all");
 
         return props;
     }
@@ -84,11 +86,9 @@ public class KafKaConfig {
         props.put(ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG, 10000);
         // 位移丢失和位移越界后的恢复起始位置
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "latest");
-        // key 和 value 的反序列化
-        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
-                "org.apache.kafka.common.serialization.StringDeserializer");
-        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
-                "org.apache.kafka.common.serialization.StringDeserializer");
+        // key 和 value 的反序列化"org.apache.kafka.common.serialization.StringDeserializer"
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
         return props;
     }
