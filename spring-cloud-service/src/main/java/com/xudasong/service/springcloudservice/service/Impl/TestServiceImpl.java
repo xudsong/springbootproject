@@ -6,8 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
 
 import static com.xudasong.service.springcloudservice.enums.ErrorCode.LESS_PARAM_ERROR;
 
@@ -31,6 +29,11 @@ public class TestServiceImpl implements ITestService{
             System.out.println(name);
         }
         return name;
+    }
+
+    public void sendSms(Object object) throws InterruptedException {
+        log.info("消息发送，手机号为{}",(String)object);
+        Thread.sleep(10000);
     }
 
 }

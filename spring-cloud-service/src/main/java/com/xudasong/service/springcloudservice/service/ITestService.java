@@ -5,4 +5,6 @@ public interface ITestService {
 
     public String test(String name);
 
+    public void sendSms(Object object) throws InterruptedException;
+
 }

@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02f93a8-4f0b-4bd2-80df-755ab472028d" name="默认" comment="集成kafka">
-      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/util/CopyUtils.java" afterDir="false" />
+    <list default="true" id="a02f93a8-4f0b-4bd2-80df-755ab472028d" name="默认" comment="增加工具类">
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/QueueTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/StartRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/controller/RedisQueueController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/dto/LockResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/ISendQueueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/Impl/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/Impl/SendQueueServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/Impl/SmsQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_2_2_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/kafka/KafKaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/kafka/KafKaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/kafka/KafKaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/kafka/KafKaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/kafka/KafKaTopicConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/config/kafka/KafKaTopicConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/constants/RedisKeyConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/constants/RedisKeyConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/controller/KafkaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/controller/KafkaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/ITestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/ITestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/Impl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/java/com/xudasong/service/springcloudservice/service/Impl/TestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -250,12 +271,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@49631bc4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@19a83f65" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@49631bc4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a9cc19be" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@19a83f65" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@de4e0cda" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -302,7 +323,9 @@
       <workItem from="1566873716027" duration="706000" />
       <workItem from="1566875660006" duration="8820000" />
       <workItem from="1575782144440" duration="2339000" />
-      <workItem from="1576029152783" duration="43807000" />
+      <workItem from="1576029152783" duration="45510000" />
+      <workItem from="1577756602705" duration="590000" />
+      <workItem from="1577760533728" duration="9029000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1548211129553</created>
@@ -521,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576147044253</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="增加工具类">
+      <created>1576229548680</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1576229548680</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -589,7 +619,8 @@
     <MESSAGE value="添加html转pdf接口" />
     <MESSAGE value="添加分布式定时任务quartz" />
     <MESSAGE value="集成kafka" />
-    <option name="LAST_COMMIT_MESSAGE" value="集成kafka" />
+    <MESSAGE value="增加工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加工具类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
